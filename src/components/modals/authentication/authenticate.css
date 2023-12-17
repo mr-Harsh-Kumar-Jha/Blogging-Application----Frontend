@@ -1,0 +1,62 @@
+.sm-container-authenticate{
+   position:absolute;
+   background-color: rgba(29, 202, 255, 0.933);
+   display: flex;
+   flex-direction: column;
+   gap:3rem;
+   padding:2rem;
+   border-radius: 1rem;
+   width:29rem;
+   top:9rem;
+   z-index: 1;
+   right:15rem;
+}
+
+.header-authenticate{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap:2rem;
+}
+
+.authenticate-brand{
+   font-family: 'Fredericka the Great', cursive;
+   font-size:4rem;
+}
+
+.nameTag-authenticate{
+   display: flex;
+   align-items: center;
+   gap:1rem;
+}
+.nameTag-authenticate img{
+   height:7rem;
+   width:7rem;
+   border-radius: 50%;
+}
+
+.nameTag-authenticate .brandName-authenticate{
+   display: flex;
+   flex-direction: column;
+}
+
+.brandName-authenticate span , .brandName-authenticate a{
+   font-size: 2rem;
+}
+
+.SignUp-btn, .SignOut-btn{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap:1rem;
+   /* padding:1rem; */
+   cursor: pointer;
+   border-radius: 2rem;
+   width: max-content;
+   align-self: center;
+   padding: 1.2rem 3rem;
+}
+
+.SignUp-btn span, .SignOut-btn span{
+   font-size: 2rem;
+}

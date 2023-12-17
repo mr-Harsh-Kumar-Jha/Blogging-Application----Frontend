@@ -1,0 +1,101 @@
+.login-container-modal{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: fixed;
+   width: 100vw;
+   height: 100vh;
+   justify-content: center;
+   align-items: center;
+   z-index: 2;
+   background-color: #5c5c5cbd;
+   top: 0;
+}
+
+.login-main-container-modal{
+   position: relative;
+  background-color: rgba(29, 202, 255, 0.933);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 90rem;
+  transform: scale(1);
+  animation: scaling 0.5s ease-out;
+  align-items: center;
+  flex-direction: row;
+}
+
+.super-video-container{
+   display: block;
+   top: 0;
+   min-width: 40%;
+   margin: 0;
+   padding: 0;
+   border-radius: 16px 0 0 16px;
+}
+
+.signUp-sidebar{
+   position: relative;
+    height: 450px;
+    min-height: 200px;
+    overflow: hidden;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.signup-sidebar__video{
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.signup-content-container{
+   height: 100%;
+   width: 100%;
+   padding:4rem;
+   display: flex;
+   flex-direction: column;
+   gap:5rem;
+   align-items: center;
+   justify-content: center;
+}
+
+.sigIn-buttons-login-modal{
+   align-self: center;
+}
+
+.letter-content h3{
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-weight: 800;
+}
+
+.login-footer-content{
+   display: flex;
+   justify-content: center;
+   text-align: center;
+}
+
+.login-footer-content p{
+   font-weight: 300;
+}
+
+.close-container-modal-button{
+   position:absolute;
+   right:-1rem;
+   background-color: rgb(174, 174, 174);
+   border-radius: 50%;
+   width:2.5rem;
+   height:2.5rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   top:-1rem;
+   cursor: pointer;
+}

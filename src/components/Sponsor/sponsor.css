@@ -1,0 +1,250 @@
+.sponsor-container{
+   width:100vw;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.main-sponsor-content{
+   width:90%;
+}
+
+.main-sponsor-content{
+   display: grid;
+   height:100%;
+   grid-template-columns:1fr 2fr 1fr ;
+}
+
+.content-1{
+   display: flex;
+   flex-direction: column;
+   padding:3rem;
+   gap:3rem;
+   border:2px dotted gray;
+}
+
+.postCount-Sponsor{
+   position: relative;
+   color:#fff;
+   font-size: 2rem;
+}
+
+.content-1 span::after{
+   content: '';
+   position: absolute;
+   background-color:rgb(150, 150, 150);
+   bottom:0;
+   height:0.08rem;
+   left:0;
+   width:100%;
+   top:5rem;
+}
+
+.content-1-brand{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   height: 30rem;
+}
+
+.content-1 img{
+   width:15rem;
+   height:15rem;
+   border-radius: 50%;
+}
+
+.socialMedia-Imp{
+   position: relative;
+   margin-top: 2rem;
+}
+
+.socialMedia-Imp ul{
+   display: flex;
+   flex-direction: column;
+   gap:1rem;
+}
+
+.socialMedia-Imp ul li a{
+   display: flex;
+   gap:1rem;
+   align-items: center;
+   font-size: 1.7rem;
+   color:#fff;
+   text-decoration: none;
+}
+
+.socialMedia-Imp::after{
+   content: '';
+   position: absolute;
+   background-color:rgb(150, 150, 150);
+   bottom:0;
+   height:0.09rem;
+   left:0;
+   width:100%;
+   top:8.5rem;
+}
+
+.socialHandle-icons ul{
+   display: flex;
+   gap:2rem;
+}
+
+.socialHandle-icons ul li a{
+   border:1px solid #fff;
+   padding:0.5rem;
+   display: flex;
+   align-items: center;
+   border-radius: 1rem;
+}
+
+/* content-2 */
+.content-2{
+   display:flex;
+   flex-direction: column;
+   padding: 3rem;
+   gap:3rem;
+   border:2px dotted gray;
+   border-left: none;
+
+}
+
+.header-content-2{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap:1.5rem;
+   position: relative;
+}
+
+.header-content-2 span{
+   color:rgb(126, 126, 126);
+   font-weight: bold;
+   font-stretch: expanded;
+}
+
+.header-content-2 button{
+   padding:2rem;
+   border-radius: 5rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap:1rem;
+   font-size:1.8rem;
+   font-weight: bolder;
+   margin-top: 2rem;
+}
+
+.header-content-2::after{
+   content: '';
+   position: absolute;
+   background-color: rgb(150, 150, 150);
+   bottom: -5rem;
+   height: 0.09rem;
+   width: 100%;
+}
+
+.sponsor-personalInfo{
+   margin-top:7rem;
+   display: flex;
+   flex-direction: column;
+   gap:2rem;
+   position: relative;
+}
+
+.sponsor-personalInfo::after{
+   content: '';
+   position: absolute;
+   background-color: rgb(150, 150, 150);
+   bottom: -6rem;
+   height: 0.09rem;
+   width: 100%;
+}
+
+.sponsor-personalInfo h1{
+   color:#fff;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.sponsor-personalInfo p{
+   margin-bottom: 0;
+   color:#fff;
+   font-size: 1.8rem;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.recent-articles-sponsor{
+   width:100%;
+   margin-top:7rem;
+   display: flex;
+   flex-direction: column;
+}
+
+.recent-articles-sponsor h2{
+   color:#d8d8d8;
+}
+
+.sponsor-blogs{
+   display: grid;
+   grid-template-columns: auto auto;
+   flex-wrap: wrap;
+   gap:1rem;
+}
+
+/* content-3 */
+.content-3{
+   display:flex;
+   flex-direction: column;
+   padding: 3rem;
+   gap:3rem;
+   border:2px dotted gray;
+   border-left: none;
+}
+
+.header-content-3{
+   color:#fff;
+   font-size: 2rem;
+   font-weight:bolder;
+}
+
+.empty-sponsor-content{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap:1rem;
+}
+
+.empty-sponsor-content p{
+   color:#fff;
+   width:70%;
+   font-size: larger;
+   text-align: center;
+}
+
+.button-sponsor{
+   display:flex;
+   gap:1rem;
+   align-items: center;
+   background: none;
+}
+
+.rupees-symbol{
+   display: flex;
+   align-items: center;
+   border: 1px solid #4db5ff;
+   border-radius: 50%;
+   padding:1rem;
+   background: #4db5ff;
+}
+
+.button-sponsor span{
+   font-size: 2rem;
+   color:#4db5ff;
+
+}
+
+.actual-post-container-sponsor{
+   display: flex;
+   gap:5rem;
+
+}

@@ -1,0 +1,238 @@
+.active{
+   background-color: var(--color-bg-variant);
+   color: #fff;
+   padding:1.5rem;
+   border-radius: 1.5rem;
+   font-size: 2rem;
+   font-weight: 530;
+   cursor: pointer;
+}
+
+.spon-container{
+   position:fixed;
+   top:0;
+   width:100vw;
+   height:100vh;
+   left:0;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   z-index: 2;
+   background-color: #5c5c5cbd;
+}
+
+.mainSponsor-container{
+   top:2rem;
+   position: relative;
+   width:60rem;
+   background-color: rgba(29, 202, 255, 0.933);
+   transform: scale(1);
+   transform: translate(0rem, 0rem);
+   animation: sponsorScale 0.8s;
+}
+@keyframes sponsorScale {
+   from{
+      /* transform: scale(0.2); */
+      transform: translate(-80rem ,-40rem) scale(0.2);
+   }to{
+      /* transform: scale(1); */
+      transform: translate(0rem ,0rem) scale(1);
+   }
+}
+
+
+.mainSponsor-container-descale{
+   top:2rem;
+   position: relative;
+   width:60rem;
+   background-color: rgba(29, 202, 255, 0.933);
+   transform: scale(1);
+   transform: translate(80rem ,40rem);
+   animation: sponsorDeScale 0.8s ease-in-out;
+}
+@keyframes sponsorDeScale {
+   from{
+      /* transform: scale(1); */
+      transform: translate(0rem ,0rem) scale(1);
+   }to{
+      /* transform: scale(0); */
+      transform: translate(80rem ,40rem) scale(0);
+   }
+}
+
+.brand-sponsor-detail{
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 5rem;
+   padding: 3rem;
+}
+
+.symbol-brand-sponsor{
+   height:7rem;
+}
+
+.symbol-brand-sponsor span{
+   position: absolute;
+   width:13rem;
+   height:13rem;
+   border-radius: 50%;
+   background-color: rgb(66, 199, 251);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   top:-6rem;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+
+.symbol-brand-sponsor span img{
+   width:8rem;
+   height:8rem;
+   border-radius: 50%;
+}
+
+.main-textual-content-sponsor{
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.main-textual-content-sponsor h3{
+   font-family: 'Fredericka the Great', cursive;
+   font-size: 4rem;
+   font-weight: bolder;
+}
+
+.main-textual-content-sponsor p{
+   font-family: 'Fredericka the Great', cursive;
+}
+
+.css-6l27w5{
+   font-size: larger;
+   color: #7b7b7b;
+   font-weight: bolder;
+}
+
+.css-x5i8pm{
+   color: #4d4d4d;
+   font-size: bolder;
+}
+
+.money-section-sponsor-container{
+   display: flex;
+   flex-direction: column;
+   gap:2rem;
+   padding:3rem;
+}
+
+.empty-sponsor{
+   content: '';
+   width:100%;
+   height:2px;
+   color: white;
+}
+
+.brand-sponsor-detail::after{
+   content: '';
+   position: absolute;
+   background-color:rgb(150, 150, 150);
+   bottom:0;
+   height:0.08rem;
+   left:0;
+   width:100%;
+   bottom:-2.5rem;
+}
+
+.main-money-contaainer-sponsor{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap:1rem;
+}
+
+.css-1dtgckb{
+   font-size: 2rem;
+   color:#4d4d4d;
+   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.css-1dtgckb2{
+   margin-top: 2rem !important;
+   font-size: 2rem;
+   color:#4d4d4d;
+   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.money-bottons-sponsor ul{
+   display: flex;
+   gap:1rem;
+}
+
+.money-bottons-sponsor ul .css-3nqq7i{
+   padding:1.5rem;
+   border-radius: 1.5rem;
+   font-size: 2rem;
+   font-weight: 530;
+   background-color: #fff;
+   color:black;
+   cursor: pointer;
+}
+
+.input-amount-sponsor{
+   display: flex;
+   border:1px solid rgb(150, 150, 150);
+   border-radius: 0.5rem;
+   align-items: center;
+   padding:1rem;
+}
+
+.input-amount-sponsor input{
+   background-color: transparent;
+   padding: 0.5rem;
+   border-radius: 0.5rem;
+   font-size: 2rem;
+   font-weight: 600;
+}
+
+.input-amount-sponsor input::placeholder{
+   color:#4d4d4d;
+
+}
+
+.css-1goqn04 p{
+   font-size: 1.7rem;
+   font-weight: 600;
+}
+
+.buttons-sponsor-modal{
+   display: flex;
+   background-color: rgb(126, 199, 255);
+    justify-content: space-between;
+    width:100%;
+    height:10rem;
+    align-items: center;
+    padding:2rem;
+}
+
+.buttons-sponsor-modal button{
+   padding:1rem;
+   border-radius:0.8rem;
+   font-size: larger;
+   /* height:5rem; */
+   background: transparent;
+}
+
+.css-2reahb{
+   background: var(--color-bg-variant) !important;
+   color:#fff;
+   padding: 1.5rem 2.5rem !important;
+   font-size:x-large !important;
+   font-weight: 600;
+}

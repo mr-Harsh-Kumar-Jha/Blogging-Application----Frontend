@@ -1,0 +1,125 @@
+.newsletter-container {
+  width: 100%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-auto-flow: row;
+  padding-bottom: 0px;
+  grid-template-columns: repeat(10, minmax(0, 1fr));
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 7rem;
+}
+
+.main-newsletter-container {
+  grid-column: 1/-1;
+  /* width: 90%;
+   display: flex;
+   justify-content: center; */
+   display: flex;
+   flex-direction: column;
+   gap:2rem;
+}
+
+.image-container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -2.5rem;
+  display: block;
+  height: 10rem;
+  width: 10rem;
+  overflow: hidden;
+  border-radius: 9999px;
+}
+
+.mainContainer-content-newsletter {
+  margin-top: 8rem;
+  margin-bottom: 2.5rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 2.5rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.css-e2xo3p {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap:2rem;
+}
+
+.css-1yfx558{
+   font-size: 4.5rem !important;
+   color: #d9d9d9;
+}
+
+.css-y0uycb{
+   font-size: x-large;
+   color:#d9d9d9;
+   width:90%;
+   text-align: center;
+}
+
+.css-976no0{
+   display: flex;
+   border: 2px solid #868686;
+   border-radius: 1rem;
+   width:85%;
+}
+
+.css-976no0 input{
+   background: transparent;
+   padding:2rem;
+   color:#d9d9d9;
+   font-size: x-large;
+   width:85%;
+}
+
+.css-976no0 button{
+   padding:0.5rem 3rem;
+   font-size: 2.3rem;
+   font-weight: 500;
+   border-radius: 0 1rem 1rem 0;
+}
+
+/* recent-articles */
+.reacent-articles-container-newsletter{
+   width:100%;
+   display:flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   grid-column: 1/-1;
+   margin-top:8.5rem;
+}
+.heading-container h3{
+   font-size:3rem;
+   color: #d9d9d9;
+}
+
+.contents-display-container-recent-articles{
+   width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2.5rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 5rem;
+    padding-bottom: 1.25rem;
+
+}

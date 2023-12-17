@@ -1,0 +1,64 @@
+.footer__container{
+   background-color: rgba(29, 202, 255, 0.933);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap:3rem;
+   padding:2rem;
+   margin-top: 5rem;
+   position: relative;
+   bottom: 0rem;
+   top:auto;
+   width: 100vw;
+}
+
+.footer__list ul {
+   display:flex;
+   gap:2rem;
+   justify-content: center;
+}
+
+.footer__list ul li{
+   position: relative;
+   font-size: 1.8rem;
+   cursor: pointer;
+}
+
+.footer__list ul li::after{
+   content: '';
+   /* display: block; */
+   position:absolute;
+   bottom:0;
+   left:0;
+   margin: auto;
+   height: 3px;
+   width: 0px;
+   background: transparent;
+   transition: width .5s ease, background-color .5s ease;
+}
+
+.footer__list ul li:hover::after{
+   width: 100%;
+   background-color: #ffffff;
+}
+
+
+.footer-Brand{
+   font-size: 5rem;
+   font-family: 'Fredericka the Great', cursive;
+}
+
+.footer__lastContent{
+   display:flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.footer__lastContent button{
+   padding:1.5rem;
+   border-radius: 3rem;
+   font-size: 1.7rem;
+   border:2px solid var(--color-bg-variant);
+}
