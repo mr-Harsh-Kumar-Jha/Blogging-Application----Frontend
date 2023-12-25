@@ -8,7 +8,6 @@ import {useNavigate} from 'react-router-dom';
 const CardDisplayBlogs = (props) => {
    let title='bro';
    let blog = props.blog;
-   console.log(blog);
    let description = blog.description.slice(0, 20);
    description = description.replace(/<[^>]*>/g, '');
    let readTime = calculateReadingTime(blog.description)

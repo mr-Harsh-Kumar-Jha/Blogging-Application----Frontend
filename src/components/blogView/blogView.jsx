@@ -10,7 +10,6 @@ const BlogView = () => {
    const param = useParams()
    const blogID = param.id;
    const data = useContext(UserContext);
-   console.log('data====', data)
    const [blog, setBlog] = useState('');
    const [jsonData, setJsonData] = useState({"like":false, "comment":false, "saved":false});
 
@@ -52,7 +51,7 @@ const BlogView = () => {
          }
          setBlog(blogJson.blog);
       }
-      getBlogContent();
+     getBlogContent();
    }, [])
 
    const handleClick = async (data, operation) => {
@@ -117,10 +116,10 @@ const BlogView = () => {
                      <img src={blog.imageCover} alt={blog.title} />
                      <div className='fs-3' dangerouslySetInnerHTML={{ __html: blog.description }} />
                   </div>
-                  <CommentView data={data} />
+                  <CommentView data={data} blogID={blogID}/>
                </section>
                <section className='section-blogview-3'>
-                  
+
                </section>
             </div>
          </div>

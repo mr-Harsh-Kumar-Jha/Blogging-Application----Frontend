@@ -26,7 +26,7 @@ const LoginPage = (props) => {
 
       return `${rootUri}?${queryString.toString()}`;
    }
-   console.log(handleLoginScreen())
+   handleLoginScreen()
    return (
       <div className='login-container-modal' onClick={navigateToPrevSection}>
          <div className="login-main-container-modal" onClick={(e) => e.stopPropagation()}>

@@ -128,7 +128,6 @@ function App() {
             }),
           }
         );
-        console.log(ans);
       } else {
         localStorage.setItem("unique_id", unique_id);
         const hello = await fetch("http://127.0.0.1:4000/analytic/active", {
@@ -142,7 +141,6 @@ function App() {
           }),
         });
         const json = await hello.json();
-        console.log(json);
       }
     };
 

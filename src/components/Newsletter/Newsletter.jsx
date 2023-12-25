@@ -15,7 +15,6 @@ const Newsletter = () => {
             },
          })
          let json = await rawJson.json();
-         console.log(json)
          setBlogs(json.blog);
       }
 

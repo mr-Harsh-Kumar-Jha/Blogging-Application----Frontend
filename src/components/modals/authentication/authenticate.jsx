@@ -13,13 +13,10 @@ const Authenticate = ({ onClose, btnRef}) => {
    const data = useContext(UserContext);
    const [signIn, setSignIn] = useState(false);
    const [userData, setUserData] = useState(null);
-   console.log('in authenticate');
-   console.log(location);
 
    useEffect(() => {
       const checkIfClickedOutside = e => {
          if (ref.current && !ref.current.contains(e.target) && !btnRef.contains(e.target)) {
-            // console.log(onClose, e.target, btnRef);
             onClose();
          }
       }
@@ -28,19 +25,16 @@ const Authenticate = ({ onClose, btnRef}) => {
          document.removeEventListener("click", checkIfClickedOutside)
       }
    }, [onClose, btnRef]);
-   console.log(data);
 
    useEffect(()=>{
       localStorage.setItem('recentBrowse', location.pathname);
       if(data.state.user!=null){
-         console.log("hello", data);
          setSignIn(true);
          setUserData(data.state.user);
       }
    },[]);
 
    const handleSignout = ()=>{
-      // console.log("hey buddy fucker", data);
       data.dispatch({
          type: "signout",
          payload:{user:null}
